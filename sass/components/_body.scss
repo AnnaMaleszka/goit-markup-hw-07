@@ -1,0 +1,8 @@
+@import "../utils/_variables.scss";
+@import "../utils/_transitions.scss";
+@import "../utils/_decoration.scss";
+
+body {
+  background: getColors("bodyBackgroundColor");
+  font-family: $mainFont;
+}

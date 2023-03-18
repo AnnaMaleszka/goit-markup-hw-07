@@ -1,0 +1,35 @@
+@import "../utils/_transitions.scss";
+@import "../utils/_decoration.scss";
+
+.decoration-logo {
+  text-decoration: $textDecoration;
+  margin-right: 93px;
+  font-family: $logoFont;
+
+  font-weight: 700;
+
+  font-size: getFontSize("l");
+  line-height: 1.25;
+}
+
+.decoration-logo__header {
+  @extend .decoration-logo;
+
+  &--web {
+    color: getColors("logoColor");
+  }
+  &--studio {
+    color: getColors("blackFontColor");
+  }
+}
+
+.decoration-logo__footer {
+  @extend .decoration-logo;
+
+  &--web {
+    color: getColors("logoColor");
+  }
+  &--studio {
+    color: getColors("whiteFontColor");
+  }
+}

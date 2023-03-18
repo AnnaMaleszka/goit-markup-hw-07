@@ -1,0 +1,36 @@
+@import "./utils/_variables.scss";
+@import "./utils/_transitions.scss";
+@import "./utils/_decoration.scss";
+@import "./utils/_margins.scss";
+@import "./components/_body.scss";
+@import "./components/_form.scss";
+@import "./components/_logo.scss";
+@import "./components/_page-description.scss";
+@import "./components/_buttons.scss";
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+@import "./components/_icon-section.scss";
+@import "./components/_what-we-do.scss";
+@import "./components/_our-team.scss";
+@import "./components/_our-clients.scss";
+@import "./components/_modal-window.scss";
+@import "./components/_footer.scss";
+
+// portfolio
+
+@import "./components/_portfolio.scss";
+
+.container {
+  width: 1200px;
+
+  padding-right: 15px;
+  padding-left: 15px;
+
+  margin: 0 auto;
+}
+
+@import "./components/_page-header.scss";

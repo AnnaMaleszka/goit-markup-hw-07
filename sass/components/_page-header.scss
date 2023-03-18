@@ -1,0 +1,71 @@
+@import "../utils/_variables.scss";
+@import "../utils/_transitions.scss";
+@import "../utils/_decoration.scss";
+
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  &__bottom-line {
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__navi {
+    display: flex;
+    gap: 40px;
+    list-style-type: $listStyle;
+    font-size: getFontSize("xs");
+    font-weight: 500;
+    line-height: 1.14;
+
+    &--link {
+      text-decoration: $textDecoration;
+      color: getColors("blackFontColor");
+      @extend .transitions;
+
+      &:hover,
+      &:focus {
+        color: getColors("logoColor");
+        outline: 0;
+      }
+    }
+
+    &--link-active {
+      color: getColors("logoColor");
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: getColors("logoColor");
+        transform: translateY(30px);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    gap: 50px;
+    list-style-type: $listStyle;
+    font-size: getFontSize("xs");
+    font-weight: 500;
+    line-height: 1.14;
+    margin-left: auto;
+
+    &--link-contact {
+      text-decoration: $textDecoration;
+      color: getColors("grayFontColor");
+      fill: getColors("iconsColor");
+      @extend .transitions;
+
+      &:hover,
+      &:focus {
+        color: getColors("logoColor");
+        fill: getColors("logoColor");
+        outline: 0;
+      }
+    }
+  }
+}

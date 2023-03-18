@@ -1,0 +1,72 @@
+@import "../utils/_variables.scss";
+@import "../utils/_transitions.scss";
+@import "../utils/_decoration.scss";
+
+.our-team {
+  background-color: getColors("sectionBackgroundColor");
+
+  &__header {
+    font-size: getFontSize("xl");
+    font-weight: 700;
+    line-height: 0.85;
+    color: getColors("blackParagraph");
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    list-style-type: $listStyle;
+    display: flex;
+    justify-content: space-between;
+    font-size: getFontSize("s");
+
+    &--name {
+      font-weight: 500;
+      line-height: 1.17;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    &--job-position {
+      font-weight: 400;
+      line-height: 1.17;
+      color: getColors("grayFontColor");
+      text-align: center;
+    }
+
+    &--border {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.our-team__social-media-icons {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-team__social-media-icons--icon {
+  fill: getColors("iconsColor");
+  background-color: getColors("whiteFontColor");
+  transition-property: fill;
+  @extend .transitions;
+  text-decoration: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: getColors("whiteFontColor");
+    background-color: getColors("logoColor");
+  }
+}

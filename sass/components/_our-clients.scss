@@ -1,0 +1,49 @@
+@import "../utils/_variables.scss";
+@import "../utils/_transitions.scss";
+@import "../utils/_decoration.scss";
+
+.our-clients {
+  font-size: getFontSize("xl");
+  font-weight: 700;
+  line-height: 0.85;
+  color: getColors("blackParagraph");
+  text-align: center;
+  margin-bottom: 50px;
+
+  &__list {
+    list-style-type: $listStyle;
+    display: flex;
+    justify-content: space-between;
+
+    &--icon {
+      width: 170px;
+      height: 92px;
+      fill: getColors("iconsColor");
+      transition-property: fill;
+      @extend .transitions;
+
+      &:hover,
+      &:focus {
+        fill: getColors("logoColor");
+      }
+    }
+
+    &--border {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 92px;
+
+      border: 1px solid getColors("iconsColor");
+      border-radius: 4px;
+      transition-property: border-color;
+      @extend .transitions;
+
+      &:hover,
+      &:focus {
+        border-color: getColors("logoColor");
+      }
+    }
+  }
+}
