@@ -1,35 +1,17 @@
-@import "../utils/_transitions.scss";
-@import "../utils/_decoration.scss";
-
-.decoration-logo {
+.logo {
   text-decoration: $textDecoration;
   margin-right: 93px;
   font-family: $logoFont;
-
   font-weight: 700;
-
   font-size: getFontSize("l");
   line-height: 1.25;
-}
-
-.decoration-logo__header {
-  @extend .decoration-logo;
-
-  &--web {
-    color: getColors("logoColor");
-  }
-  &--studio {
+  &__studio {
     color: getColors("blackFontColor");
+    &--light {
+      color: getColors("whiteFontColor");
+    }
   }
-}
-
-.decoration-logo__footer {
-  @extend .decoration-logo;
-
-  &--web {
+  &__web {
     color: getColors("logoColor");
-  }
-  &--studio {
-    color: getColors("whiteFontColor");
   }
 }

@@ -1,16 +1,11 @@
-@import "../utils/_variables.scss";
-@import "../utils/_transitions.scss";
-@import "../utils/_decoration.scss";
 
 .icon-section {
   padding-bottom: 0px;
-
   &__list {
     list-style-type: $listStyle;
     display: flex;
     gap: 30px;
   }
-
   &__style-paragraph {
     font-size: getFontSize("xs");
     font-weight: 400;
@@ -18,7 +13,6 @@
     color: getColors("grayFontColor");
     padding-top: 10px;
   }
-
   &__paragraph-header {
     font-size: getFontSize("xs");
     font-weight: 700;
@@ -26,7 +20,6 @@
     color: getColors("blackFontColor");
     margin-top: 30px;
   }
-
   &__icon {
     background-color: getColors("sectionBackgroundColor");
     height: 120px;

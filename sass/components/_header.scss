@@ -1,0 +1,17 @@
+
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  &__bottom-line {
+    border-bottom: 1px solid #ececec;
+    width: 100%;
+  }
+  &__logo {
+    margin-right: 93px;
+  }
+  &__navigation{
+    margin-left: auto;
+  }
+  }
+

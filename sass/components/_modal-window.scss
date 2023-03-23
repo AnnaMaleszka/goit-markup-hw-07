@@ -6,13 +6,11 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-
 .modal {
   position: absolute;
   top: 50%;
@@ -26,7 +24,6 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
   animation: modalanimation 3s;
   animation-iteration-count: 1;
-
   @keyframes modalanimation {
     0% {
       transform: translate(-50%, -50%) scale(1);
@@ -40,7 +37,6 @@
       transform: translate(-50%, -50%) scale(1);
     }
   }
-
   &__close-btn {
     position: absolute;
     top: 8px;
@@ -51,11 +47,9 @@
     border-color: rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     cursor: pointer;
-
     &--iconX {
       fill: #000000;
       position: absolute;
-
       top: 8px;
       right: 8px;
       width: 30px;

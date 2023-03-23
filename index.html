@@ -16,40 +16,40 @@
     <link href="css/main.min.css" rel="stylesheet" />
   </head>
   <body>
-    <header >
-      <section class="container header header__bottom-line">
-        <a href="./index.html" class="decoration-logo__header">
-          <span class="decoration-logo__header--web">Web</span
-          ><span class="decoration-logo__header--studio">Studio</span>
+    <header class="header__bottom-line">
+      <section class="  container header ">
+        <a href="./index.html" class="logo header__logo">
+          <span class="logo__web">Web</span
+          ><span class="logo__studio">Studio</span>
         </a>
-        <nav>
-          <ul class="header__navi">
+        <nav >
+          <ul class="navigation" >
             <li>
-              <a href="./index.html" class="header__navi--link header__navi--link-active">Agencja</a>
+              <a href="./index.html" class="navigation__link navigation__link--active">Agencja</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="header__navi--link">Portfolio</a>
+              <a href="./portfolio.html" class="navigation__link ">Portfolio</a>
             </li>
             <li>
-              <a href="./index.html" class="header__navi--link">Kontakt</a>
+              <a href="./index.html" class="navigation__link ">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <ul class="header__contact">
+        <ul class="navigation header__navigation">
           <li>
             <a
               href="mailto:info@devstudio.com"
-              class="header__contact--link-contact "
+              class="navigation__contact "
             >
-              <svg class="icon-spacing" width="16" height="12">
+              <svg class="navigation__contact--icon" width="16" height="12">
                 <use xlink:href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+48111111111" class="header__contact--link-contact">
-              <svg class="icon-spacing" width="16" height="12">
+            <a href="tel:+48111111111" class="navigation__contact">
+              <svg class="navigation__contact--icon" width="16" height="12">
                 <use xlink:href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -61,9 +61,9 @@
     <main>
       <section class="page-description" >
         <div class="container">
-          <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <h1 class="page-description__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
          
-          <button type="button" class="button button"  data-modal-open>Zamów usługę</button>
+          <button type="button" class="button"  data-modal-open>Zamów usługę</button>
         
         </div>
       </section>
@@ -124,10 +124,10 @@
       </section>
 
 
-      <section class="container section">
-        <h2 class="what-we-do">Czym się zajmujemy</h2>
-        <ul class="what-we-do__images">
-          <li class="what-we-do__front-bacground">
+      <section class="container section overview ">
+        <h2 class="overview__title">Czym się zajmujemy</h2>
+        <ul class="overview__list">
+          <li class="overview__bacground">
             <img 
               src="images/image1.jpg"
               alt="programer-working-his-desk-office"
@@ -135,25 +135,25 @@
               height="294"
               
             />
-            <p class="what-we-do__label">APLIKACJE KOMPUTEROWE</p>
+            <p class="overview__label">APLIKACJE KOMPUTEROWE</p>
           </li>
-          <li class="what-we-do__front-bacground">
+          <li class="overview__bacground">
             <img
               src="images/image2.jpg"
               alt=" web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones"
               width="370"
               height="294"
             />
-             <p class="what-we-do__label">APLIKACJE MOBILNE</p>
+             <p class="overview__label">APLIKACJE MOBILNE</p>
           </li>
-          <li class="what-we-do__front-bacground">
+          <li class="overview__bacground">
             <img
               src="images/image3.jpg"
               alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet"
               width="370"
               height="294"
             />
-             <p class="what-we-do__label">APLIKACJE GRAFICZNE</p>
+             <p class="overview__label">APLIKACJE GRAFICZNE</p>
           </li>
         </ul>
 
@@ -163,19 +163,19 @@
         <div class="container section">
           <h2 class="our-team__header">Nasz zespół</h2>
           <ul class="our-team__list">
-            <li class="our-team__list--border">
+            <li class="our-team__border">
               <img
                 src="images/johndoe1.jpg"
                 alt="product designer"
                 width="270"
                 height="260"
               />
-              <h3 class="our-team__list--name">John Doe</h3>
-              <p class="our-team__list--job-position">Product Designer</p>
+              <h3 class="our-team__name">John Doe</h3>
+              <p class="our-team__job-position">Product Designer</p>
 
-              <div class="our-team__social-media-icons">
-                <a class="our-team__social-media-icons--icon" href="https://www.instagram.com/">
-                  <svg >
+              <div class="socials">
+                <a class="socials__social-media-icons" href="https://www.instagram.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-instagram"
                       width="20"
@@ -186,8 +186,8 @@
                   </svg>
                 </a>
 
-                <a class="our-team__social-media-icons--icon" href="https://www.twitter.com/">
-                  <svg >
+                <a class="socials__social-media-icons" href="https://www.twitter.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-twitter"
                       width="20"
@@ -198,8 +198,8 @@
                   </svg>
                 </a>
 
-                <a class="our-team__social-media-icons--icon" href="https://www.facebook.com/">
-                  <svg >
+                <a class="socials__social-media-icons" href="https://www.facebook.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-facebook"
                       width="20"
@@ -210,8 +210,8 @@
                   </svg>
                 </a>
 
-                <a class="our-team__social-media-icons--icon" href="https://pl.linkedin.com/">
-                  <svg >
+                <a class="socials__social-media-icons" href="https://pl.linkedin.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-linkedin2"
                       width="20"
@@ -224,78 +224,78 @@
               </div>
             </li>
 
-            <li class="our-team__list--border">
+            <li class="our-team__border">
               <img
                 src="images/johndoe2.jpg"
                 alt="images/frontend developer"
                 width="270"
                 height="260"
                 />
-                <h3 class="our-team__list--name">John Doe</h3>
-                <p class="our-team__list--job-position">Product Frontend Developer</p>
-              <div class="our-team__social-media-icons">
-                <a class="our-team__social-media-icons--icon" href="https://www.instagram.com/">
-                  <svg >
-                    <use
-                      xlink:href="./images/icons.svg#icon-instagram"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-
-                <a class="our-team__social-media-icons--icon" href="https://www.twitter.com/">
-                  <svg >
-                    <use
-                      xlink:href="./images/icons.svg#icon-twitter"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-
-                <a class="our-team__social-media-icons--icon" href="https://www.facebook.com/">
-                  <svg >
-                    <use
-                      xlink:href="./images/icons.svg#icon-facebook"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-
-                <a class="our-team__social-media-icons--icon" href="https://pl.linkedin.com/">
-                  <svg >
-                    <use
-                      xlink:href="./images/icons.svg#icon-linkedin2"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-              </div>
+                <h3 class="our-team__name">John Doe</h3>
+                <p class="our-team__job-position">Product Frontend Developer</p>
+                <div class="socials">
+                  <a class="socials__social-media-icons" href="https://www.instagram.com/">
+                    <svg class="socials__svg">
+                      <use
+                        xlink:href="./images/icons.svg#icon-instagram"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+  
+                  <a class="socials__social-media-icons" href="https://www.twitter.com/">
+                    <svg class="socials__svg">
+                      <use
+                        xlink:href="./images/icons.svg#icon-twitter"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+  
+                  <a class="socials__social-media-icons" href="https://www.facebook.com/">
+                    <svg class="socials__svg">
+                      <use
+                        xlink:href="./images/icons.svg#icon-facebook"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+  
+                  <a class="socials__social-media-icons" href="https://pl.linkedin.com/">
+                    <svg class="socials__svg">
+                      <use
+                        xlink:href="./images/icons.svg#icon-linkedin2"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
             </li>
 
-            <li class="our-team__list--border">
+            <li class="our-team__border">
               <img
                 src="images/johndoe3.jpg"
                 alt="marketing"
                 width="270"
                 height="260"
               />
-              <h3 class="our-team__list--name">John Doe</h3>
-              <p class="our-team__list--job-position">Product Marketing</p>
-              <div class="our-team__social-media-icons">
-                <a class="our-team__social-media-icons--icon" href="https://www.instagram.com/">
-                  <svg >
+              <h3 class="our-team__name">John Doe</h3>
+              <p class="our-team__job-position">Product Marketing</p>
+              <div class="socials">
+                <a class="socials__social-media-icons" href="https://www.instagram.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-instagram"
                       width="20"
@@ -306,8 +306,8 @@
                   </svg>
                 </a>
 
-                <a class="our-team__social-media-icons--icon" href="https://www.twitter.com/">
-                  <svg >
+                <a class="socials__social-media-icons" href="https://www.twitter.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-twitter"
                       width="20"
@@ -318,8 +318,8 @@
                   </svg>
                 </a>
 
-                <a class="our-team__social-media-icons--icon" href="https://www.facebook.com/">
-                  <svg >
+                <a class="socials__social-media-icons" href="https://www.facebook.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-facebook"
                       width="20"
@@ -330,8 +330,8 @@
                   </svg>
                 </a>
 
-                <a class="our-team__social-media-icons--icon" href="https://pl.linkedin.com/">
-                  <svg >
+                <a class="socials__social-media-icons" href="https://pl.linkedin.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-linkedin2"
                       width="20"
@@ -344,18 +344,18 @@
               </div>
             </li>
 
-            <li class="our-team__list--border">
+            <li class="our-team__border">
               <img
                 src="images/johndoe4.jpg"
                 alt="marketing"
                 width="270"
                 height="260"
               />
-              <h3 class="our-team__list--name">John Doe</h3>
-              <p class="our-team__list--job-position">Ul Designer</p>
-              <div class="our-team__social-media-icons">
-                <a class="our-team__social-media-icons--icon" href="https://www.instagram.com/">
-                  <svg >
+              <h3 class="our-team__name">John Doe</h3>
+              <p class="our-team__job-position">Ul Designer</p>
+              <div class="socials">
+                <a class="socials__social-media-icons" href="https://www.instagram.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-instagram"
                       width="20"
@@ -366,8 +366,8 @@
                   </svg>
                 </a>
 
-                <a class="our-team__social-media-icons--icon" href="https://www.twitter.com/">
-                  <svg >
+                <a class="socials__social-media-icons" href="https://www.twitter.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-twitter"
                       width="20"
@@ -378,8 +378,8 @@
                   </svg>
                 </a>
 
-                <a class="our-team__social-media-icons--icon" href="https://www.facebook.com/">
-                  <svg >
+                <a class="socials__social-media-icons" href="https://www.facebook.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-facebook"
                       width="20"
@@ -390,8 +390,8 @@
                   </svg>
                 </a>
 
-                <a class="our-team__social-media-icons--icon" href="https://pl.linkedin.com/">
-                  <svg >
+                <a class="socials__social-media-icons" href="https://pl.linkedin.com/">
+                  <svg class="socials__svg">
                     <use
                       xlink:href="./images/icons.svg#icon-linkedin2"
                       width="20"
@@ -408,12 +408,12 @@
         </div>
       </section>
 
-      <section class="container section">
-          <h2 class="our-clients">Nasi klienci</h2>
-         <ul class="our-clients__list">
+      <section class="container section clients">
+          <h2 class="clients__title">Nasi klienci</h2>
+         <ul class="clients__list">
           <li >
-            <a class="our-clients__list--border" href="./index.html">
-                  <svg class="our-clients__list--icon" >
+            <a class="clients__border" href="./index.html">
+                  <svg class="clients__icon" >
                     <use
                       xlink:href="./images/icons.svg#icon-Logo"
                     width="106"
@@ -425,8 +425,8 @@
               </a>
           </li>
                 <li >
-                 <a class="our-clients__list--border" href="./index.html">
-                  <svg class="our-clients__list--icon" >
+                  <a class="clients__border" href="./index.html">
+                    <svg class="clients__icon" >
                     <use
                       xlink:href="./images/icons.svg#icon-Logo1"
                     width="106"
@@ -437,8 +437,8 @@
                   </svg>
                 </a></li>
                 <li >
-                 <a class="our-clients__list--border" href="./index.html">
-                  <svg class="our-clients__list--icon" >
+                  <a class="clients__border" href="./index.html">
+                    <svg class="clients__icon" >
                     <use
                       xlink:href="./images/icons.svg#icon-Logo2"
                     width="106"
@@ -449,8 +449,8 @@
                   </svg>
                 </a>
                 <li >
-                 <a class="our-clients__list--border" href="./index.html">
-                  <svg class="our-clients__list--icon" >
+                  <a class="clients__border" href="./index.html">
+                    <svg class="clients__icon" >
                     <use
                       xlink:href="./images/icons.svg#icon-Logo3"
                     width="106"
@@ -461,8 +461,8 @@
                   </svg>
                 </a></div>
                 <li >
-                 <a class="our-clients__list--border" href="./index.html">
-                  <svg class="our-clients__list--icon" >
+                  <a class="clients__border" href="./index.html">
+                    <svg class="clients__icon" >
                     <use
                       xlink:href="./images/icons.svg#icon-Logo4"
                     width="106"
@@ -473,8 +473,8 @@
                   </svg>
                 </a></li>
                 <li >
-                 <a class="our-clients__list--border" href="./index.html">
-                  <svg class="our-clients__list--icon" >
+                  <a class="clients__border" href="./index.html">
+                    <svg class="clients__icon" >
                     <use
                       xlink:href="./images/icons.svg#icon-Logo5"
                     width="106"
@@ -492,29 +492,29 @@
    <footer class="footer">
       <section class="container footer__box">
         <div>
-          <a href="./index.html" class="decoration-logo__footer">
-          <span class="decoration-logo__footer--web">Web</span
-          ><span class="decoration-logo__footer--studio">Studio</span>
-          </a>
+         <a href="./index.html" class="logo">
+          <span class="logo__web">Web</span
+          ><span class="logo__studio logo__studio--light">Studio</span>
+        </a>
           <address>
             <p class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</p>
           </address>
-          <ul class="footer__contact">
+          <ul class="navigation footer__navigation">
             <li >
-              <a class="footer__contact--link" href="mailto:info@devstudio.com"
+              <a class="navigation__contact navigation__contact--light" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li >
-              <a class="footer__contact--link" href="tel:+48111111111">+48 111 111 111</a>
+              <a class="navigation__contact navigation__contact--light" href="tel:+48111111111">+48 111 111 111</a>
             </li>
           </ul>
         </div>
         <div>
           <h3 class="footer__join-us">DOŁĄCZ DO NAS</h3>
-          <div class="footer__social-media-icons">
-            <a class="footer__social-media-icons--icon" href="https://www.instagram.com/">
-              <svg >
+          <div class="socials">
+            <a class="socials__social-media-icons socials__social-media-icons--dark" href="https://www.instagram.com/">
+              <svg class="socials__svg">
                 <use
                   xlink:href="./images/icons.svg#icon-instagram"
                   width="20"
@@ -525,8 +525,8 @@
               </svg>
             </a>
 
-            <a class="footer__social-media-icons--icon" href="https://www.twitter.com/">
-              <svg>
+            <a class="socials__social-media-icons socials__social-media-icons--dark" href="https://www.twitter.com/">
+              <svg class="socials__svg">
                 <use
                   xlink:href="./images/icons.svg#icon-twitter"
                   width="20"
@@ -537,8 +537,8 @@
               </svg>
             </a>
 
-            <a class="footer__social-media-icons--icon" href="https://www.facebook.com/">
-              <svg >
+            <a class="socials__social-media-icons socials__social-media-icons--dark" href="https://www.facebook.com/">
+              <svg class="socials__svg">
                 <use
                   xlink:href="./images/icons.svg#icon-facebook"
                   width="20"
@@ -549,8 +549,8 @@
               </svg>
             </a>
 
-            <a class="footer__social-media-icons--icon" href="https://pl.linkedin.com/">
-              <svg >
+            <a class="socials__social-media-icons socials__social-media-icons--dark" href="https://pl.linkedin.com/">
+              <svg class="socials__svg">
                 <use
                   xlink:href="./images/icons.svg#icon-linkedin2"
                   width="20"
@@ -569,8 +569,8 @@
               Zapisz się do newslettera
           </p>
           <input type="text" name="e-mail" class="footer__email"  placeholder="E-mail"/>
-          <button type="submit" class="button__footer">Zapisz się
-       <svg class="button__footer--icon-send">
+          <button type="submit" class="button button__icon">Zapisz się
+       <svg class=" button__icon--send">
               <use
               xlink:href="./images/icons.svg#icon-icon-send"
               width="24"
@@ -610,9 +610,9 @@
               <p class="form__title">Zostaw swoje dane w formularzu poniżej</p>
              
           <fieldset class="form__fieldset">
-            <label class="form__fieldset--label form__fieldset--details">
+            <label class="form__label form__details">
               Imię
-              <svg  class="form__fieldset--icons">
+              <svg  class="form__icons">
                     <use xlink:href="./images/icons.svg#icon-Vector-1-1"
                       width="12"
                       height="12"
@@ -620,55 +620,55 @@
                     >
                     </use>
               </svg>
-              <input type="name" name="name" class="form__fieldset--input-border"/>
+              <input type="name" name="name" class="form__input-border"/>
             </label>
-            <label class="form__fieldset--label form__fieldset--details">
+            <label class="form__label form__details">
               Numer telefonu  
-              <svg  class="form__fieldset--icons">
+              <svg  class="form__icons">
                     <use xlink:href="./images/icons.svg#icon-Vector-2-1"
                       width="12"
                       height="12"
                     >
                     </use>
               </svg>
-              <input type="tel" name="phone_number" class="form__fieldset--input-border"/>
+              <input type="tel" name="phone_number" class="form__input-border"/>
             </label>
-            <label class="form__fieldset--label form__fieldset--details">
+            <label class="form__label form__details">
               E-mail
-              <svg  class="form__fieldset--icons">
+              <svg  class="form__icons">
                     <use xlink:href="./images/icons.svg#icon-Vector-3-1"
                       width="12"
                       height="12"
                     >
                     </use>
               </svg>
-              <input type="email" name="email" class="form__fieldset--input-border"/>
+              <input type="email" name="email" class="form__input-border"/>
             </label>
-            <label class="form__fieldset--label form__fieldset--details">
+            <label class="form__label form__details">
               Komentarz
-               <textarea class="form__fieldset--textarea-comment form__fieldset--comment" name="text"  
+               <textarea class="form__textarea-comment form__comment" name="text"  
                   placeholder="Wprowadź tekst" ></textarea> 
              </label> 
           </fieldset>
         
         
              
-              <label class="form__checkbox">
-                <input type="checkbox" name="accept" value="true" class="form__checkbox--checked"/>
-                <span class="form__checkbox--checkmark"></span>
-               <svg class="form__checkbox--checkmark_icon">
+              <label class="checkbox">
+                <input type="checkbox" name="accept" value="true" class="checkbox__checked"/>
+                <span class="checkbox__checkmark"></span>
+               <svg class="checkbox__checkmark-icon">
                 <use xlink:href="./images/icons.svg#icon-Vector-5"
                 width="16"
                 height="15"
                 >
               </use>
               </svg>
-                <p> Oświadczam iż akceptuję <a href="index.html" class="form__form-link"> Regulamin </a>i <a href="index.html" class="form__form-link">Politykę Prywatności</a>.
+                <p> Oświadczam iż akceptuję <a href="index.html" class="checkbox__link"> Regulamin </a>i <a href="index.html" class="checkbox__link">Politykę Prywatności</a>.
                   </p>
                   
               </label>
              
-            <button type="submit" class="submit-button__form">Wyślij</button>
+            <button type="submit" class="button">Wyślij</button>
           
          </form>
         

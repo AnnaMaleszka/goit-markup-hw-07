@@ -1,20 +1,14 @@
-@import "../utils/_variables.scss";
-@import "../utils/_transitions.scss";
-@import "../utils/_decoration.scss";
-@import "./_buttons.scss";
 
 .form {
   padding: 40px;
-
   &__fieldset {
     border-color: transparent;
     padding: 0;
-
-    &--label {
+  }
+    &__label {
       display: flex;
       flex-direction: column;
       position: relative;
-
       &:hover,
       &:focus-within {
         fill: #2196f3;
@@ -23,22 +17,20 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
-    &--details {
+    &__details {
       font-size: 14px;
       line-height: 1.17;
       letter-spacing: 0.01em;
       color: #757575;
     }
-
-    &--icons {
+    &__icons {
       width: 12px;
       height: 12px;
       position: absolute;
       top: 35px;
       left: 12px;
     }
-
-    &--input-border {
+    &__input-border {
       height: 40px;
       width: 448px;
       border: 1px solid rgba(33, 33, 33, 0.2);
@@ -49,15 +41,13 @@
       margin-top: 4px;
       margin-bottom: 10px;
       padding-left: 40px;
-
       &:hover,
       &:focus-within {
         outline: 0;
         border-color: #2196f3;
       }
     }
-
-    &--textarea-comment {
+    &__textarea-comment {
       border: 0px;
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
@@ -65,15 +55,13 @@
       width: 448px;
       resize: none;
       margin-top: 4px;
-
       &:hover,
       &:focus-within {
         outline: 0;
         border-color: #2196f3;
       }
     }
-
-    &--comment {
+    &__comment {
       color: rgba(117, 117, 117, 0.5);
       font-size: 12px;
       line-height: 1.17;
@@ -81,8 +69,6 @@
       padding-left: 16px;
       padding-top: 12px;
     }
-  }
-
   &__title {
     margin-bottom: 12px;
     text-align: center;
@@ -94,73 +80,6 @@
   }
 }
 
-.form__checkbox {
-  display: flex;
-  position: relative;
-  margin-bottom: 30px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 400;
-  gap: 8px;
-  margin-top: 20px;
-  margin-left: 15px;
-}
 
-.form__checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.form__checkbox--checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 16px;
-  border: 2px solid black;
-  border-radius: 2px;
-}
 
-.form__checkbox--checkmark_icon {
-  width: 16px;
-  height: 15px;
-  fill: white;
-  background-color: #2196f3;
-  position: relative;
-  opacity: 0;
-  border-radius: 2px;
-}
 
-.form__checkbox input:checked ~ .form__checkbox--checkmark {
-  border: 2px solid #2196f3;
-}
-
-.form__checkbox input:checked ~ svg {
-  opacity: 1;
-}
-
-.form__form-link {
-  color: rgba(33, 150, 243, 1);
-}
-
-.submit-button__form {
-  background-color: #2196f3;
-  color: #ffffff;
-  width: 200px;
-  height: 50px;
-  border: #2196f3;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  cursor: pointer;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-
-  text-align: center;
-  padding-top: 15px;
-  letter-spacing: 0.06em;
-}

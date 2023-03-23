@@ -7,6 +7,9 @@
 @import "./components/_logo.scss";
 @import "./components/_page-description.scss";
 @import "./components/_buttons.scss";
+@import "./components/_navigation.scss";
+@import "./components/_social-media-icons.scss";
+@import "./components/_checkbox.scss";
 
 .section {
   padding-top: 94px;
@@ -14,23 +17,21 @@
 }
 
 @import "./components/_icon-section.scss";
-@import "./components/_what-we-do.scss";
+@import "./components/_overview.scss";
 @import "./components/_our-team.scss";
-@import "./components/_our-clients.scss";
+@import "./components/_clients.scss";
 @import "./components/_modal-window.scss";
 @import "./components/_footer.scss";
 
-// portfolio
+
 
 @import "./components/_portfolio.scss";
 
 .container {
   width: 1200px;
-
   padding-right: 15px;
   padding-left: 15px;
-
   margin: 0 auto;
 }
 
-@import "./components/_page-header.scss";
+@import "./components/_header.scss";
