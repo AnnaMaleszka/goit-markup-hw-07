@@ -2,6 +2,8 @@
 @import "./utils/_transitions.scss";
 @import "./utils/_decoration.scss";
 @import "./utils/_margins.scss";
+@import "./components/_container.scss";
+@import "./components/_section.scss";
 @import "./components/_body.scss";
 @import "./components/_form.scss";
 @import "./components/_logo.scss";
@@ -10,18 +12,14 @@
 @import "./components/_navigation.scss";
 @import "./components/_social-media-icons.scss";
 @import "./components/_checkbox.scss";
-@import "./components/_general-sections.scss";
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+@import "./components/_line.scss";
+@import "./components/_contact.scss";
+@import "./components/_features.scss";
 @import "./components/_modal-window.scss";
 @import "./components/_footer.scss";
 @import "./components/_portfolio.scss";
-.container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-}
+@import "./components/_grid.scss";
+@import "./components/_label.scss";
 @import "./components/_header.scss";
+@import "./components/_team.scss";
+@import "./components/_clients.scss";

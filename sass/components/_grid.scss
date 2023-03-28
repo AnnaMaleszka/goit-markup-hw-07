@@ -1,0 +1,9 @@
+.grid {
+  list-style-type: $listStyle;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    flex-basis: auto;
+  }
+}
